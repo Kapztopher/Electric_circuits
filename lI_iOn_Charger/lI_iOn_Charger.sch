@@ -1,0 +1,905 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Lithium Ion Charger"
+Date "2021-10-19"
+Rev "1"
+Comp "Kapz & Pon Hop_Electrix"
+Comment1 "Don't know if it will work lol"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:TIP41 Q2
+U 1 1 616E3232
+P 3850 2900
+F 0 "Q2" H 4041 2946 50  0000 L CNN
+F 1 "TIP41" H 4041 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4100 2825 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 3850 2900 50  0001 L CNN
+	1    3850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 616E3E9D
+P 3300 2650
+F 0 "Q1" H 3491 2696 50  0000 L CNN
+F 1 "BC547" H 3491 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3500 2575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3300 2650 50  0001 L CNN
+	1    3300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_Small D1
+U 1 1 616E52FB
+P 2600 2300
+F 0 "D1" V 2646 2232 50  0000 R CNN
+F 1 "5.6 Zener" V 2555 2232 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 2600 2300 50  0001 C CNN
+F 3 "~" V 2600 2300 50  0001 C CNN
+	1    2600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 616E6652
+P 2850 2650
+F 0 "R2" V 2654 2650 50  0000 C CNN
+F 1 "200k" V 2745 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2850 2650 50  0001 C CNN
+F 3 "~" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 616E6A84
+P 2400 2650
+F 0 "R1" V 2204 2650 50  0000 C CNN
+F 1 "131" V 2295 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2400 2650 50  0001 C CNN
+F 3 "~" H 2400 2650 50  0001 C CNN
+	1    2400 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q3
+U 1 1 616EB14E
+P 4750 3200
+F 0 "Q3" H 4941 3246 50  0000 L CNN
+F 1 "BC547" H 4941 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 4950 3125 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4750 3200 50  0001 L CNN
+	1    4750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 616EBBC8
+P 4300 3200
+F 0 "R3" V 4496 3200 50  0000 C CNN
+F 1 "470k" V 4405 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4300 3200 50  0001 C CNN
+F 3 "~" H 4300 3200 50  0001 C CNN
+	1    4300 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q4
+U 1 1 616EC30C
+P 5100 2650
+F 0 "Q4" H 5291 2696 50  0000 L CNN
+F 1 "BC557" H 5291 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 5300 2575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 5100 2650 50  0001 L CNN
+	1    5100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2650 2600 2650
+Wire Wire Line
+	2600 2650 2600 2400
+Wire Wire Line
+	2750 2650 2600 2650
+Connection ~ 2600 2650
+Wire Wire Line
+	2950 2650 3100 2650
+Wire Wire Line
+	3400 2850 3400 2900
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 616F2756
+P 4150 3500
+F 0 "J1" H 4230 3492 50  0000 L CNN
+F 1 "Battery 1" H 4230 3401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 3500 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3500 3950 3200
+Wire Wire Line
+	4200 3200 3950 3200
+Connection ~ 3950 3200
+Wire Wire Line
+	3950 3200 3950 3100
+Wire Wire Line
+	4400 3200 4550 3200
+Wire Wire Line
+	5200 2850 4400 2850
+Wire Wire Line
+	4400 2850 4400 2500
+Wire Wire Line
+	4400 2500 3600 2500
+Wire Wire Line
+	3600 2500 3600 2900
+Connection ~ 3600 2900
+Wire Wire Line
+	3600 2900 3650 2900
+Wire Wire Line
+	4850 3000 4850 2650
+Wire Wire Line
+	4850 2650 4900 2650
+$Comp
+L power:+12V #PWR04
+U 1 1 616FDB3E
+P 4050 2050
+F 0 "#PWR04" H 4050 1900 50  0001 C CNN
+F 1 "+12V" V 4065 2178 50  0000 L CNN
+F 2 "" H 4050 2050 50  0001 C CNN
+F 3 "" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2700 3950 2050
+Wire Wire Line
+	3950 2050 4050 2050
+Wire Wire Line
+	3400 2450 3400 2050
+Wire Wire Line
+	3400 2050 3950 2050
+Connection ~ 3950 2050
+$Comp
+L power:GND #PWR02
+U 1 1 616FF2F9
+P 2800 2050
+F 0 "#PWR02" H 2800 1800 50  0001 C CNN
+F 1 "GND" V 2805 1922 50  0000 R CNN
+F 2 "" H 2800 2050 50  0001 C CNN
+F 3 "" H 2800 2050 50  0001 C CNN
+	1    2800 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 2050 2600 2050
+Wire Wire Line
+	2600 2050 2600 2200
+$Comp
+L power:+12V #PWR01
+U 1 1 617000CC
+P 2000 2650
+F 0 "#PWR01" H 2000 2500 50  0001 C CNN
+F 1 "+12V" V 2015 2778 50  0000 L CNN
+F 2 "" H 2000 2650 50  0001 C CNN
+F 3 "" H 2000 2650 50  0001 C CNN
+	1    2000 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 2650 2300 2650
+$Comp
+L power:GND #PWR03
+U 1 1 61700EF7
+P 3950 4150
+F 0 "#PWR03" H 3950 3900 50  0001 C CNN
+F 1 "GND" V 3955 4022 50  0000 R CNN
+F 2 "" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 2900 3600 2900
+$Comp
+L Device:D_Zener_Small D2
+U 1 1 6176A208
+P 4850 3750
+F 0 "D2" V 4804 3818 50  0000 L CNN
+F 1 "3.4V" V 4895 3818 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 4850 3750 50  0001 C CNN
+F 3 "~" V 4850 3750 50  0001 C CNN
+	1    4850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 6176AD08
+P 5250 3550
+F 0 "R4" V 5446 3550 50  0000 C CNN
+F 1 "330" V 5355 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5250 3550 50  0001 C CNN
+F 3 "~" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 3550 4850 3550
+Wire Wire Line
+	4850 3400 4850 3550
+Connection ~ 4850 3550
+Wire Wire Line
+	4850 3550 4850 3650
+Wire Wire Line
+	3950 3600 3950 3850
+Wire Wire Line
+	4850 3850 3950 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 3950 4150
+$Comp
+L power:+12V #PWR06
+U 1 1 6176CD53
+P 5700 3550
+F 0 "#PWR06" H 5700 3400 50  0001 C CNN
+F 1 "+12V" V 5715 3678 50  0000 L CNN
+F 2 "" H 5700 3550 50  0001 C CNN
+F 3 "" H 5700 3550 50  0001 C CNN
+	1    5700 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3550 5350 3550
+$Comp
+L Transistor_BJT:BC547 Q5
+U 1 1 6177180C
+P 5450 2100
+F 0 "Q5" H 5641 2146 50  0000 L CNN
+F 1 "BC547" H 5641 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 5650 2025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5450 2100 50  0001 L CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 61772804
+P 6250 1800
+F 0 "D3" H 6243 2016 50  0000 C CNN
+F 1 "LED" H 6243 1925 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6250 1800 50  0001 C CNN
+F 3 "~" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 6177305F
+P 5800 1800
+F 0 "R5" V 5996 1800 50  0000 C CNN
+F 1 "470" V 5905 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5800 1800 50  0001 C CNN
+F 3 "~" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1800 5550 1800
+Wire Wire Line
+	5550 1800 5550 1900
+Wire Wire Line
+	5900 1800 6100 1800
+Wire Wire Line
+	5200 2450 5200 2100
+Wire Wire Line
+	5200 2100 5250 2100
+$Comp
+L power:GND #PWR05
+U 1 1 6177549B
+P 5650 2500
+F 0 "#PWR05" H 5650 2250 50  0001 C CNN
+F 1 "GND" V 5655 2372 50  0000 R CNN
+F 2 "" H 5650 2500 50  0001 C CNN
+F 3 "" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2300 5550 2500
+Wire Wire Line
+	5550 2500 5650 2500
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 617840F4
+P 1600 1050
+F 0 "J2" H 1680 1042 50  0000 L CNN
+F 1 "PWR" H 1680 951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1600 1050 50  0001 C CNN
+F 3 "~" H 1600 1050 50  0001 C CNN
+	1    1600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 61784458
+P 1200 900
+F 0 "#PWR0101" H 1200 750 50  0001 C CNN
+F 1 "+12V" V 1215 1028 50  0000 L CNN
+F 2 "" H 1200 900 50  0001 C CNN
+F 3 "" H 1200 900 50  0001 C CNN
+	1    1200 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 617847F2
+P 1100 1200
+F 0 "#PWR0102" H 1100 950 50  0001 C CNN
+F 1 "GND" V 1105 1072 50  0000 R CNN
+F 2 "" H 1100 1200 50  0001 C CNN
+F 3 "" H 1100 1200 50  0001 C CNN
+	1    1100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 61784E90
+P 6600 1800
+F 0 "#PWR0103" H 6600 1650 50  0001 C CNN
+F 1 "+12V" V 6615 1928 50  0000 L CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 1800 6600 1800
+Wire Wire Line
+	1200 900  1400 900 
+Wire Wire Line
+	1400 900  1400 1050
+Wire Wire Line
+	1100 1200 1400 1200
+Wire Wire Line
+	1400 1200 1400 1150
+$Comp
+L Transistor_BJT:TIP41 Q7
+U 1 1 617AE5BA
+P 3350 5650
+F 0 "Q7" H 3541 5696 50  0000 L CNN
+F 1 "TIP41" H 3541 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3600 5575 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 3350 5650 50  0001 L CNN
+	1    3350 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q6
+U 1 1 617AE5C0
+P 2800 5400
+F 0 "Q6" H 2991 5446 50  0000 L CNN
+F 1 "BC547" H 2991 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3000 5325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2800 5400 50  0001 L CNN
+	1    2800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q8
+U 1 1 617AE5C6
+P 4250 5950
+F 0 "Q8" H 4441 5996 50  0000 L CNN
+F 1 "BC547" H 4441 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 4450 5875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4250 5950 50  0001 L CNN
+	1    4250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 617AE5CC
+P 3800 5950
+F 0 "R7" V 3996 5950 50  0000 C CNN
+F 1 "470k" V 3905 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3800 5950 50  0001 C CNN
+F 3 "~" H 3800 5950 50  0001 C CNN
+	1    3800 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q9
+U 1 1 617AE5D2
+P 4600 5400
+F 0 "Q9" H 4791 5446 50  0000 L CNN
+F 1 "BC557" H 4791 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 4800 5325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4600 5400 50  0001 L CNN
+	1    4600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5600 2900 5650
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 617AE5D9
+P 3650 6250
+F 0 "J3" H 3730 6242 50  0000 L CNN
+F 1 "Battery 2" H 3730 6151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 6250 50  0001 C CNN
+F 3 "~" H 3650 6250 50  0001 C CNN
+	1    3650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6250 3450 5950
+Wire Wire Line
+	3700 5950 3450 5950
+Connection ~ 3450 5950
+Wire Wire Line
+	3450 5950 3450 5850
+Wire Wire Line
+	3900 5950 4050 5950
+Wire Wire Line
+	4700 5600 3900 5600
+Wire Wire Line
+	3900 5600 3900 5250
+Wire Wire Line
+	3900 5250 3100 5250
+Wire Wire Line
+	3100 5250 3100 5650
+Connection ~ 3100 5650
+Wire Wire Line
+	3100 5650 3150 5650
+Wire Wire Line
+	4350 5750 4350 5400
+Wire Wire Line
+	4350 5400 4400 5400
+$Comp
+L power:+12V #PWR08
+U 1 1 617AE5EC
+P 3550 4800
+F 0 "#PWR08" H 3550 4650 50  0001 C CNN
+F 1 "+12V" V 3565 4928 50  0000 L CNN
+F 2 "" H 3550 4800 50  0001 C CNN
+F 3 "" H 3550 4800 50  0001 C CNN
+	1    3550 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 5450 3450 4800
+Wire Wire Line
+	3450 4800 3550 4800
+Wire Wire Line
+	2900 5200 2900 4800
+Wire Wire Line
+	2900 4800 3450 4800
+Connection ~ 3450 4800
+$Comp
+L power:GND #PWR07
+U 1 1 617AE5F7
+P 3450 6900
+F 0 "#PWR07" H 3450 6650 50  0001 C CNN
+F 1 "GND" V 3455 6772 50  0000 R CNN
+F 2 "" H 3450 6900 50  0001 C CNN
+F 3 "" H 3450 6900 50  0001 C CNN
+	1    3450 6900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 5650 3100 5650
+$Comp
+L Device:D_Zener_Small D4
+U 1 1 617AE5FE
+P 4350 6500
+F 0 "D4" V 4304 6568 50  0000 L CNN
+F 1 "3.4V" V 4395 6568 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 4350 6500 50  0001 C CNN
+F 3 "~" V 4350 6500 50  0001 C CNN
+	1    4350 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 617AE604
+P 4750 6300
+F 0 "R8" V 4946 6300 50  0000 C CNN
+F 1 "330" V 4855 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4750 6300 50  0001 C CNN
+F 3 "~" H 4750 6300 50  0001 C CNN
+	1    4750 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 6300 4350 6300
+Wire Wire Line
+	4350 6150 4350 6300
+Connection ~ 4350 6300
+Wire Wire Line
+	4350 6300 4350 6400
+Wire Wire Line
+	3450 6350 3450 6600
+Wire Wire Line
+	4350 6600 3450 6600
+Connection ~ 3450 6600
+Wire Wire Line
+	3450 6600 3450 6900
+$Comp
+L power:+12V #PWR010
+U 1 1 617AE612
+P 5200 6300
+F 0 "#PWR010" H 5200 6150 50  0001 C CNN
+F 1 "+12V" V 5215 6428 50  0000 L CNN
+F 2 "" H 5200 6300 50  0001 C CNN
+F 3 "" H 5200 6300 50  0001 C CNN
+	1    5200 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 6300 4850 6300
+$Comp
+L Transistor_BJT:BC547 Q10
+U 1 1 617AE619
+P 4950 4850
+F 0 "Q10" H 5141 4896 50  0000 L CNN
+F 1 "BC547" H 5141 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 5150 4775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4950 4850 50  0001 L CNN
+	1    4950 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 617AE61F
+P 5750 4550
+F 0 "D5" H 5743 4766 50  0000 C CNN
+F 1 "LED" H 5743 4675 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5750 4550 50  0001 C CNN
+F 3 "~" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 617AE625
+P 5300 4550
+F 0 "R9" V 5496 4550 50  0000 C CNN
+F 1 "470" V 5405 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5300 4550 50  0001 C CNN
+F 3 "~" H 5300 4550 50  0001 C CNN
+	1    5300 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 4550 5050 4550
+Wire Wire Line
+	5050 4550 5050 4650
+Wire Wire Line
+	5400 4550 5600 4550
+Wire Wire Line
+	4700 5200 4700 4850
+Wire Wire Line
+	4700 4850 4750 4850
+$Comp
+L power:GND #PWR09
+U 1 1 617AE630
+P 5150 5250
+F 0 "#PWR09" H 5150 5000 50  0001 C CNN
+F 1 "GND" V 5155 5122 50  0000 R CNN
+F 2 "" H 5150 5250 50  0001 C CNN
+F 3 "" H 5150 5250 50  0001 C CNN
+	1    5150 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 5050 5050 5250
+Wire Wire Line
+	5050 5250 5150 5250
+$Comp
+L power:+12V #PWR011
+U 1 1 617AE638
+P 6100 4550
+F 0 "#PWR011" H 6100 4400 50  0001 C CNN
+F 1 "+12V" V 6115 4678 50  0000 L CNN
+F 2 "" H 6100 4550 50  0001 C CNN
+F 3 "" H 6100 4550 50  0001 C CNN
+	1    6100 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4550 6100 4550
+$Comp
+L Device:R_Small R6
+U 1 1 617B02E1
+P 2350 5400
+F 0 "R6" V 2154 5400 50  0000 C CNN
+F 1 "200k" V 2245 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2350 5400 50  0001 C CNN
+F 3 "~" H 2350 5400 50  0001 C CNN
+	1    2350 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 5400 2450 5400
+Wire Wire Line
+	2250 5400 2250 4400
+Wire Wire Line
+	2250 3050 2600 3050
+Wire Wire Line
+	2600 3050 2600 2650
+$Comp
+L Transistor_BJT:TIP41 Q12
+U 1 1 617BE4B1
+P 7400 3950
+F 0 "Q12" H 7591 3996 50  0000 L CNN
+F 1 "TIP41" H 7591 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7650 3875 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 7400 3950 50  0001 L CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q11
+U 1 1 617BE4B7
+P 6850 3700
+F 0 "Q11" H 7041 3746 50  0000 L CNN
+F 1 "BC547" H 7041 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 7050 3625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6850 3700 50  0001 L CNN
+	1    6850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q13
+U 1 1 617BE4BD
+P 8300 4250
+F 0 "Q13" H 8491 4296 50  0000 L CNN
+F 1 "BC547" H 8491 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 8500 4175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 8300 4250 50  0001 L CNN
+	1    8300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 617BE4C3
+P 7850 4250
+F 0 "R11" V 8046 4250 50  0000 C CNN
+F 1 "470k" V 7955 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7850 4250 50  0001 C CNN
+F 3 "~" H 7850 4250 50  0001 C CNN
+	1    7850 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q14
+U 1 1 617BE4C9
+P 8650 3700
+F 0 "Q14" H 8841 3746 50  0000 L CNN
+F 1 "BC557" H 8841 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 8850 3625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 8650 3700 50  0001 L CNN
+	1    8650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3900 6950 3950
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 617BE4D0
+P 7700 4550
+F 0 "J4" H 7780 4542 50  0000 L CNN
+F 1 "Battery 3" H 7780 4451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7700 4550 50  0001 C CNN
+F 3 "~" H 7700 4550 50  0001 C CNN
+	1    7700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4550 7500 4250
+Wire Wire Line
+	7750 4250 7500 4250
+Connection ~ 7500 4250
+Wire Wire Line
+	7500 4250 7500 4150
+Wire Wire Line
+	7950 4250 8100 4250
+Wire Wire Line
+	8750 3900 7950 3900
+Wire Wire Line
+	7950 3900 7950 3550
+Wire Wire Line
+	7950 3550 7150 3550
+Wire Wire Line
+	7150 3550 7150 3950
+Connection ~ 7150 3950
+Wire Wire Line
+	7150 3950 7200 3950
+Wire Wire Line
+	8400 4050 8400 3700
+Wire Wire Line
+	8400 3700 8450 3700
+$Comp
+L power:+12V #PWR013
+U 1 1 617BE4E3
+P 7600 3100
+F 0 "#PWR013" H 7600 2950 50  0001 C CNN
+F 1 "+12V" V 7615 3228 50  0000 L CNN
+F 2 "" H 7600 3100 50  0001 C CNN
+F 3 "" H 7600 3100 50  0001 C CNN
+	1    7600 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3750 7500 3100
+Wire Wire Line
+	7500 3100 7600 3100
+Wire Wire Line
+	6950 3500 6950 3100
+Wire Wire Line
+	6950 3100 7500 3100
+Connection ~ 7500 3100
+$Comp
+L power:GND #PWR012
+U 1 1 617BE4EE
+P 7500 5200
+F 0 "#PWR012" H 7500 4950 50  0001 C CNN
+F 1 "GND" V 7505 5072 50  0000 R CNN
+F 2 "" H 7500 5200 50  0001 C CNN
+F 3 "" H 7500 5200 50  0001 C CNN
+	1    7500 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 3950 7150 3950
+$Comp
+L Device:D_Zener_Small D6
+U 1 1 617BE4F5
+P 8400 4800
+F 0 "D6" V 8354 4868 50  0000 L CNN
+F 1 "3.4V" V 8445 4868 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 8400 4800 50  0001 C CNN
+F 3 "~" V 8400 4800 50  0001 C CNN
+	1    8400 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 617BE4FB
+P 8800 4600
+F 0 "R12" V 8996 4600 50  0000 C CNN
+F 1 "330" V 8905 4600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8800 4600 50  0001 C CNN
+F 3 "~" H 8800 4600 50  0001 C CNN
+	1    8800 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 4600 8400 4600
+Wire Wire Line
+	8400 4450 8400 4600
+Connection ~ 8400 4600
+Wire Wire Line
+	8400 4600 8400 4700
+Wire Wire Line
+	7500 4650 7500 4900
+Wire Wire Line
+	8400 4900 7500 4900
+Connection ~ 7500 4900
+Wire Wire Line
+	7500 4900 7500 5200
+$Comp
+L power:+12V #PWR015
+U 1 1 617BE509
+P 9250 4600
+F 0 "#PWR015" H 9250 4450 50  0001 C CNN
+F 1 "+12V" V 9265 4728 50  0000 L CNN
+F 2 "" H 9250 4600 50  0001 C CNN
+F 3 "" H 9250 4600 50  0001 C CNN
+	1    9250 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 4600 8900 4600
+$Comp
+L Transistor_BJT:BC547 Q15
+U 1 1 617BE510
+P 9000 3150
+F 0 "Q15" H 9191 3196 50  0000 L CNN
+F 1 "BC547" H 9191 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 9200 3075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 9000 3150 50  0001 L CNN
+	1    9000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 617BE516
+P 9800 2850
+F 0 "D7" H 9793 3066 50  0000 C CNN
+F 1 "LED" H 9793 2975 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 9800 2850 50  0001 C CNN
+F 3 "~" H 9800 2850 50  0001 C CNN
+	1    9800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 617BE51C
+P 9350 2850
+F 0 "R13" V 9546 2850 50  0000 C CNN
+F 1 "470" V 9455 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9350 2850 50  0001 C CNN
+F 3 "~" H 9350 2850 50  0001 C CNN
+	1    9350 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 2850 9100 2850
+Wire Wire Line
+	9100 2850 9100 2950
+Wire Wire Line
+	9450 2850 9650 2850
+Wire Wire Line
+	8750 3500 8750 3150
+Wire Wire Line
+	8750 3150 8800 3150
+$Comp
+L power:GND #PWR014
+U 1 1 617BE527
+P 9200 3550
+F 0 "#PWR014" H 9200 3300 50  0001 C CNN
+F 1 "GND" V 9205 3422 50  0000 R CNN
+F 2 "" H 9200 3550 50  0001 C CNN
+F 3 "" H 9200 3550 50  0001 C CNN
+	1    9200 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 3350 9100 3550
+Wire Wire Line
+	9100 3550 9200 3550
+$Comp
+L power:+12V #PWR016
+U 1 1 617BE52F
+P 10150 2850
+F 0 "#PWR016" H 10150 2700 50  0001 C CNN
+F 1 "+12V" V 10165 2978 50  0000 L CNN
+F 2 "" H 10150 2850 50  0001 C CNN
+F 3 "" H 10150 2850 50  0001 C CNN
+	1    10150 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 2850 10150 2850
+$Comp
+L Device:R_Small R10
+U 1 1 617C1621
+P 6250 3850
+F 0 "R10" H 6191 3804 50  0000 R CNN
+F 1 "200k" H 6191 3895 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6250 3850 50  0001 C CNN
+F 3 "~" H 6250 3850 50  0001 C CNN
+	1    6250 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 3700
+Wire Wire Line
+	6250 3950 4650 3950
+Wire Wire Line
+	4650 3950 4650 4400
+Wire Wire Line
+	4650 4400 2250 4400
+Connection ~ 2250 4400
+Wire Wire Line
+	2250 4400 2250 3050
+$EndSCHEMATC
