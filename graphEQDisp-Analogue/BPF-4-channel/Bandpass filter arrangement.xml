@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/kapz/Documents/Circuits/KICAD/Bandpass filter arrangement/Bandpass filter arrangement.kicad_sch</source>
+    <date>Sat 10 Sep 2022 23:30:16</date>
+    <tool>Eeschema 6.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Microphone pick-up with bandpass filter for Display</title>
+        <company>KAPZ &amp; PON ELECTRIX</company>
+        <rev>1st Draft</rev>
+        <date>2022-09-10</date>
+        <source>Bandpass filter arrangement.kicad_sch</source>
+        <comment number="1" value="4 channel filter "/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Bass_filter.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/600-900Hz_LED_SIG/" tstamps="/c9ca5742-2f82-4ddf-bf53-79ab04c5e06b/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>600-900_filter.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Pick-up_process_out_sch.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>LM358</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LM358" description="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Bandpass filter arrangement.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dcc742d-e8c6-4099-8d80-f2ef0af4e93f</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>102</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>22c5d341-9ea1-4eb7-b1e9-afb446f7b0da</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>561</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>6ef5f92b-26c5-42a0-9285-18dbf977f9c2</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>331</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>1d0af17b-6169-4914-b863-70c7244980de</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>333</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>d1b8ffcb-b2a2-4f2d-8a62-8d9ae68608ea</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>pick-up_level_pot</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>07d3ef3f-3e9c-4883-a9ce-12174923dfeb</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>47K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>f7a0568d-c373-49ad-a5a3-0ce29f0c4cf5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>220K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>c903237b-9008-4842-85e0-fdbed9542cc1</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>2K7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>dbc8b7ef-fda7-447b-b591-c38c4e35ed2e</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>20K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>415335cf-7dda-412b-a964-45b0ba2e8d77</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1M</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>4aa0b4ec-bdb3-4862-b6b4-308b14a5a675</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>7258b965-6187-4d9b-a8fd-807eea3f8c50</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>5K6</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>1bbbfa40-54a0-418d-a5db-b65c35035c65</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>560K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>c98117f1-eca0-4d1f-ae69-19d7559387f6</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LM358</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LM358" description="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="Sheetname" value="260Hz_Lowpass_BASS_LED_SIG"/>
+      <property name="Sheetfile" value="Bass_filter.kicad_sch"/>
+      <sheetpath names="/260Hz_Lowpass_BASS_LED_SIG/" tstamps="/77cfb154-563b-477d-83f6-d3b4ce6af863/"/>
+      <tstamps>d321125e-91f7-4700-87d3-955dc40c7547</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>102</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>4a747e50-6fb6-4240-a75f-b203a7fd6bf6</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D7.5mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>7dc00e27-97c3-4656-b2b7-409e7cbc9d18</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>471</value>
+      <footprint>Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>1041e59a-05dc-4999-acc6-978899146095</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>DZ2S030X0L</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://industrial.panasonic.com/content/data/SC/ds/ds4/DZ2S03000L_E.pdf</datasheet>
+      <libsource lib="Diode" part="DZ2S030X0L" description="150mW Silicon Planar Zener Diode, 3.0V, SOD-523"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>2f30a078-5b13-4ea3-a9de-879cc3f21baf</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>pick-up_level_pot</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>c96b57b8-07a1-4156-acb9-7a2466971194</tstamps>
+    </comp>
+    <comp ref="MK1">
+      <value>Microphone_Condenser</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Device" part="Microphone_Condenser" description="Condenser microphone"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>2420ab6e-f0be-4863-8f07-f694b231f1ae</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NPN_EBC</value>
+      <footprint>Package_TO_SOT_THT:TO-92_HandSolder</footprint>
+      <libsource lib="Device" part="Q_NPN_EBC" description="NPN transistor, emitter/base/collector"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>f774f79c-1371-467b-898e-af8578629d69</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>4e62a6af-065e-4d95-b6a8-2fc6ab28ce7d</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1M3</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>4866c95e-0c37-43c9-a01c-3e3f8f9a50dc</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>48f27fc9-ce77-437f-9382-776fc8d95648</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>130K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>7115f518-8eff-43b4-ae87-25fd13ef2546</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>520</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>d52628d5-14c4-4388-8018-93071d22c353</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>39K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>2df03e97-e2d8-4059-a34a-4796c564278f</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>R_Potentiometer_Trim</value>
+      <footprint>Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical</footprint>
+      <libsource lib="Device" part="R_Potentiometer_Trim" description="Trim-potentiometer"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>b96fa12a-f62c-40dc-9839-b85d4c897489</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LM358</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="LM358" description="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>f8ca3502-36ed-4bf8-b31f-ff1244d77988 a1f76eb2-7dad-43c2-bd66-0204a8291923</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>LM386</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm386.pdf</datasheet>
+      <libsource lib="Amplifier_Audio" part="LM386" description="Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8"/>
+      <property name="Sheetname" value="mic_pick-up_Sig_processing_Sid_out"/>
+      <property name="Sheetfile" value="Pick-up_process_out_sch.kicad_sch"/>
+      <sheetpath names="/mic_pick-up_Sig_processing_Sid_out/" tstamps="/d00cc422-6b04-4c38-8ad9-4697331f9f47/"/>
+      <tstamps>27887463-580f-4f2b-b4cf-2ee6e95f5aa5</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Audio" part="LM386">
+      <description>Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm386.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>MSSOP*P0.65mm*</fp>
+        <fp>TSSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM386</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm386.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GAIN" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="" type="output"/>
+        <pin num="6" name="V+" type="power_in"/>
+        <pin num="7" name="BYPASS" type="input"/>
+        <pin num="8" name="GAIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="LM358">
+      <description>Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM358</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Microphone_Condenser">
+      <description>Condenser microphone</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">Microphone_Condenser</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NPN_EBC">
+      <description>NPN transistor, emitter/base/collector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_EBC</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer_Trim">
+      <description>Trim-potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer_Trim</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="DZ2S030X0L">
+      <description>150mW Silicon Planar Zener Diode, 3.0V, SOD-523</description>
+      <docs>https://industrial.panasonic.com/content/data/SC/ds/ds4/DZ2S03000L_E.pdf</docs>
+      <footprints>
+        <fp>D?SOD?523*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DZ2S030X0L</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet">https://industrial.panasonic.com/content/data/SC/ds/ds4/DZ2S03000L_E.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Audio">
+      <uri>/usr/share/kicad/symbols//Amplifier_Audio.kicad_sym</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>/usr/share/kicad/symbols//Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/usr/share/kicad/symbols//Diode.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Bass_LED">
+      <node ref="U1" pin="7" pintype="output"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="MK1" pin="1" pinfunction="-" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="-" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="3" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="5" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="6" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="MK1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="GAIN" pintype="input"/>
+    </net>
+    <net code="10" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="GAIN" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U4" pin="5" pintype="output"/>
+    </net>
+    <net code="12" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="15" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="17" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="output"/>
+    </net>
+    <net code="22" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(R13-Pad1)">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U3" pin="7" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(RV1-Pad2)">
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="26" name="RAW_SIG">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="E" pintype="passive"/>
+    </net>
+    <net code="27" name="VDD">
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U4" pin="6" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="28" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="V-" pintype="power_in"/>
+    </net>
+    <net code="29" name="unconnected-(U1-Pad8)">
+      <node ref="U1" pin="8" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="30" name="unconnected-(U4-Pad7)">
+      <node ref="U4" pin="7" pinfunction="BYPASS" pintype="input"/>
+    </net>
+  </nets>
+</export>
